@@ -5,7 +5,7 @@ async function submitFeedback() {
         message: document.getElementById("message").value
     };
 
-    const response = await fetch("YOUR_API_GATEWAY_URL/feedback", {
+    const response = await fetch("https://69ldtusvpl.execute-api.ap-south-1.amazonaws.com/prodFeedback/feedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
